@@ -1,0 +1,123 @@
+/* Add to your style.css */
+/* Accessibility enhancements */
+:root {
+ --intel-blue: #0067b8; /* Darkened for better contrast */
+ --intel-blue-light: #e6f2ff;
+ --intel-green: #008a00; /* Darkened for better contrast */
+ --intel-green-light: #e8f5e9;
+ --intel-gold: #cc8500; /* Darkened for better contrast */
+ --intel-gold-light: #fff8e1;
+ --intel-gray-light: #f8f9fa;
+ --intel-border: #dee2e6;
+}
+
+.intel-card {
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+ border: 1px solid var(--intel-border);
+ background-color: var(--intel-gray-light);
+}
+
+.intel-card:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 10px 20px rgba(0, 113, 197, 0.15);
+}
+
+/* Add to your style.css */
+.btn-intel-blue {
+ background-color: var(--intel-blue-light);
+ color: var(--intel-blue);
+ border: 2px solid var(--intel-blue);
+ transition: all 0.3s ease;
+}
+.btn-intel-blue:hover {
+ background-color: var(--intel-blue);
+ color: white;
+}
+
+.btn-intel-green {
+ background-color: var(--intel-green-light);
+ color: var(--intel-green);
+ border: 2px solid var(--intel-green);
+ transition: all 0.3s ease;
+}
+.btn-intel-green:hover {
+ background-color: var(--intel-green);
+ color: white;
+}
+
+.btn-intel-gold {
+ background-color: var(--intel-gold-light);
+ color: var(--intel-gold);
+ border: 2px solid var(--intel-gold);
+ transition: all 0.3s ease;
+}
+.btn-intel-gold:hover {
+ background-color: var(--intel-gold);
+ color: white;
+}
+
+.bg-intel-blue-light { background-color: var(--intel-blue-light); }
+.bg-intel-green-light { background-color: var(--intel-green-light); }
+.bg-intel-gold-light { background-color: var(--intel-gold-light); }
+.text-intel-blue { color: var(--intel-blue); }
+.text-intel-green { color: var(--intel-green); }
+.text-intel-gold { color: var(--intel-gold); }
+
+/* Border color utilities */
+.border-intel-blue {
+ border-color: var(--intel-blue) !important;
+}
+
+.border-intel-green {
+ border-color: var(--intel-green) !important;
+}
+
+.border-intel-gold {
+ border-color: var(--intel-gold) !important;
+}
+
+.text-muted {
+ color: #5a6a7a !important; /* Improved contrast against light backgrounds */
+}
+
+.bg-dark a:hover {
+ text-decoration: underline;
+ color: #b3d9ff !important;
+}
+
+/* Form accessibility */
+.form-label {
+ color: #2c3e50;
+}
+.form-control:focus {
+ border-color: var(--intel-blue);
+ box-shadow: 0 0 0 0.25rem rgba(0, 103, 184, 0.25);
+}
+
+/* Badge styles */
+.bg-intel-green {
+ background-color: var(--intel-green) !important;
+ color: white;
+}
+
+.bg-intel-blue {
+ background-color: var(--intel-blue) !important;
+ color: white;
+}
+
+.bg-intel-gold {
+ background-color: var(--intel-gold) !important;
+ color: white;
+}
+
+/* Accordion customization */
+.accordion-button:not(.collapsed) {
+ background-color: var(--intel-blue-light);
+ color: var(--intel-blue);
+}
+
+.accordion-button:focus {
+ box-shadow: 0 0 0 0.25rem rgba(0, 103, 184, 0.25);
+ border-color: var(--intel-blue);
+}
+
